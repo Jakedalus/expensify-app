@@ -20,10 +20,10 @@ store.subscribe(() => {
 });
 
 store.dispatch(addExpense({ description: 'Water bill', amount: 300 }));
-store.dispatch(addExpense({ description: 'Gas bill', amount: 130 }));
+store.dispatch(addExpense({ description: 'Gas bill', amount: 130, createdAt: 5000 }));
+store.dispatch(addExpense({ description: 'Rent bill', amount: 11300, createdAt: 1000 }));
 
-store.dispatch(setTextFilter('bill'));
-store.dispatch(setTextFilter('water'));
+
 
 const jsx = (
     <Provider store={store}>
