@@ -1,5 +1,7 @@
-# BUILD FILES
+
 public/dist/
+.env.development
+.env.test
 
 # MAC
 
